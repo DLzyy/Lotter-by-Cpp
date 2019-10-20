@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="QWMainWindow">
+    <file>images/重命名.png</file>
+    <file>images/抽号.ico</file>
+    <file>images/放大.png</file>
+    <file>images/开始.png</file>
+    <file>images/列表.png</file>
+    <file>images/设置.png</file>
+    <file>images/缩小.png</file>
+    <file>images/信息.png</file>
+    <file>images/暂停.png</file>
+    <file>images/删除.png</file>
+    <file>images/添加.png</file>
+  </qresource>
+</RCC>

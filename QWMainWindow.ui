@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QWMainWindow</class>
+ <widget class="QMainWindow" name="QWMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>抽号器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="QWMainWindow.qrc">
+    <normaloff>:/QWMainWindow/images/抽号.ico</normaloff>:/QWMainWindow/images/抽号.ico</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="5,5,1,4,0">
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>114</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="5">
+      <item>
+       <widget class="QLabel" name="outputLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>50</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>690</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="6,3,6">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mainButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>65</width>
+          <height>65</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>90</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <family>18thCentury</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>45</width>
+     <height>40</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actSettings"/>
+   <addaction name="actLotPool"/>
+   <addaction name="actSimpleWin"/>
+  </widget>
+  <action name="actSettings">
+   <property name="icon">
+    <iconset resource="QWMainWindow.qrc">
+     <normaloff>:/QWMainWindow/images/设置.png</normaloff>:/QWMainWindow/images/设置.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="toolTip">
+    <string>打开设置</string>
+   </property>
+  </action>
+  <action name="actLotPool">
+   <property name="icon">
+    <iconset resource="QWMainWindow.qrc">
+     <normaloff>:/QWMainWindow/images/列表.png</normaloff>:/QWMainWindow/images/列表.png</iconset>
+   </property>
+   <property name="text">
+    <string>签池</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑签池</string>
+   </property>
+  </action>
+  <action name="actSimpleWin">
+   <property name="icon">
+    <iconset resource="QWMainWindow.qrc">
+     <normaloff>:/QWMainWindow/images/缩小.png</normaloff>:/QWMainWindow/images/缩小.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>转为小窗口</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="QWMainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
